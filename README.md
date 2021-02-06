@@ -60,3 +60,32 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+##Para agregar la carpeta vendor
+ejecutar: composer install
+
+##ruta : localhost/tiendavirtualg3/
+##pagina administrador : localhost/tiendavirtualg3/public/admin
+
+## ejecutar:
+php artisan make:controller AdminController
+
+##ejecutar:
+php artisan make:migration crear_tabla_productos --create=productos
+php artisan migrate:install
+
+##modelo ejecutar:
+php artisan make:model Producto
+
+##ejecutar
+php artisan db:seed
+
+##USAR AXIOS
+URL : https://github.com/axios/axios
+
+##Laravel Fortify
+ejecutar: composer require laravel/fortify
+php artisan vendor:publish --provider='Laravel\Fortify\FortifyServiceProvider'
+php artisan migrate:fresh
+php artisan route:list
+
